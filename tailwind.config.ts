@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,20 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'pulse-glow': {
+                    '0%, 100%': { 
+                        boxShadow: '0 0 15px 2px rgba(124, 58, 237, 0.3)' 
+                    },
+                    '50%': { 
+                        boxShadow: '0 0 25px 6px rgba(124, 58, 237, 0.5)' 
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'pulse-glow': 'pulse-glow 3s infinite'
 			}
 		}
 	},
